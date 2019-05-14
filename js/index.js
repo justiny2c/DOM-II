@@ -30,10 +30,14 @@ title[0].addEventListener ("dblclick", function(event){
 
 const para = document.querySelectorAll("p")
 
-// para.forEach(para => {
-    window.addEventListener("scroll", function(event){
-        para.forEach(para => {
-        para.style.color = "red";
-        // alert("WTF");
+window.addEventListener("scroll", function(event){
+    para.forEach(para => {
+    para.style.color = "darkgrey";
     })
 })
+
+const images = document.querySelectorAll("img")
+images.forEach(images => {
+    images.addEventListener("drag", function(){
+    alert("Where are you taking me?")})
+});
